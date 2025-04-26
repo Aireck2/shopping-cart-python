@@ -1,0 +1,30 @@
+{
+  "A001": {
+    "name": "Pan",
+    "price": "S/1.50"
+  },
+  "B203": {
+    "name": "Leche",
+    "price": "S/4.50"
+  },
+  "B204": {
+    "name": "Yogurt",
+    "price": "S/5.00"
+  },
+  "B205": {
+    "name": "Banana",
+    "price": "S/3.80"
+  },
+  "B206": {
+    "name": "Manzana",
+    "price": "S/2.50"
+  },
+  "B207": {
+    "name": "Cerveza",
+    "price": "S/5.90"
+  },
+  "C208": {
+    "name": "Café",
+    "price": "S/4.00"
+  }
+}
