@@ -1,5 +1,31 @@
 # 🛒 Proyecto Final: Simulador de Tienda con Carrito de Compras
 
+## 🚀 How to Run the Project
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/aireck2/shopping-cart-python.git
+```
+
+### 2. (Optional) Create and activate a virtual environment
+
+```bash
+# Create a virtual environment
+python -m venv venv
+
+# Activate it
+source venv/bin/activate
+```
+
+### 4. Run the application
+
+Simply run:
+
+```bash
+python main.py
+```
+
 ## 📘 Contexto/Introducción
 
 Imagina que estás construyendo el backend de una pequeña tienda virtual. En este sistema, los usuarios pueden ver los productos disponibles, agregar productos al carrito, eliminarlos, ver el contenido del carrito, vaciarlo y finalizar su compra.
