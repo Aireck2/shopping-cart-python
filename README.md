@@ -1,4 +1,10 @@
-# 🛒 Proyecto Final: Simulador de Tienda con Carrito de Compras
+# 🛒 Final Project: Shopping Cart Simulator
+
+This project simulates the logic of a basic e-commerce project, but with enough complexity to help you think about modularization, input validation, error handling, and clean, pure-function design. There's no graphical interface or API consumption: you work with the console and data structures.
+
+<div style="text-align: center">
+<img src="./demo.gif" alt="Demo of the Shopping Cart Simulator" width="600" style="margin-bottom: 20px;">
+</div>
 
 ## 🚀 How to Run the Project
 
@@ -26,129 +32,32 @@ Simply run:
 python main.py
 ```
 
-## 📘 Contexto/Introducción
+## 💻 Features
 
-Imagina que estás construyendo el backend de una pequeña tienda virtual. En este sistema, los usuarios pueden ver los productos disponibles, agregar productos al carrito, eliminarlos, ver el contenido del carrito, vaciarlo y finalizar su compra.
+- View product list: View the list of available products with their names, codes, and prices.
 
-Este proyecto simula la lógica de un comercio electrónico básico, pero con suficiente complejidad para ayudarte a pensar en modularización, validación de entradas, manejo de errores y diseño limpio de funciones puras. No hay interfaz gráfica ni consumo de APIs: se trabaja con consola y estructuras de datos.
+- Add products to the cart: The user can select products and add them to their cart.
 
-## ✅ Requerimientos Funcionales
+- Remove products from the cart: The user can select products and remove them from the cart.
 
-El sistema debe permitir al usuario interactuar a través del input de consola y realizar las siguientes acciones:
+- Clean cart: Clear the cart completely.
 
-### 🧾 Catálogo
+- View cart: View the cart contents and the total purchase amount.
 
-Mostrar una lista de productos con sus nombres, códigos y precios.
+- Complete purchase: The user can finalize the purchase. The purchase is registered in a CSV file.
 
-Los productos están precargados al iniciar el programa.
+- Exit: Exit the program.
 
-### 🛒 Carrito de compras
+## 🧩 Customization
 
-Agregar un producto al carrito a partir de su código.
+- Add products: You can modify the file data/products_data.json to add or remove products.
 
-Validar si el código existe en el catálogo.
+## 📄 Requirements
 
-Permitir agregar múltiples cantidades.
+- Python 3.7 or higher.
 
-Eliminar un producto del carrito.
+## 👨‍💻 Author
 
-Vaciar el carrito completamente.
+- [Erick Escriba | @Aireck2](https://github.com/Aireck2)
 
-Mostrar el contenido actual del carrito, con cantidades, precios individuales y total acumulado.
-
-### 💳 Checkout
-
-Permitir al usuario finalizar la compra.
-
-Validar si hay productos en el carrito.
-
-Mostrar resumen de compra: productos, cantidades, total.
-
-Simular "procesamiento del pago" (print).
-
-Vaciar el carrito.
-
-## 🔁 Loop de ejecución
-
-El sistema debe ejecutarse en bucle hasta que el usuario decida salir.
-
-Las acciones se muestran como un menú numérico:
-
-```
-1. Ver catálogo
-2. Agregar producto al carrito
-3. Eliminar producto del carrito
-4. Vaciar carrito
-5. Mostrar carrito
-6. Finalizar compra
-7. Salir
-```
-
-## 🎯 Desafío Opcional (Nivel 2% Más)
-
-Agrega la funcionalidad de guardar un historial de compras en un archivo .txt o .csv, donde cada compra (al finalizar el checkout) se registre con:
-
-Fecha y hora (datetime)
-
-Lista de productos comprados
-
-Total de la compra
-
-El archivo debe actualizarse sin sobrescribir los registros anteriores.
-
-## 🧠 Buenas prácticas y sugerencias técnicas
-
-- Usa typing para anotar tus funciones (por ejemplo, -> dict, -> list[str], etc.).
-
-- Usa try/except para capturar errores de input del usuario (e.g., escribir texto cuando se espera un número).
-
-- Usa estructuras como list, dict, set de forma adecuada:
-
-  - dict para el catálogo ({codigo: {nombre, precio}})
-
-  - dict o list para el carrito ({codigo: cantidad} o lista de tuplas)
-
-- Modulariza tu código: crea funciones puras y separa la lógica del menú, la lógica de validación, etc.
-
-- Agrega validaciones robustas (código inexistente, cantidades inválidas, carrito vacío en checkout).
-
-- Usa os.system("clear") si quieres limpiar la consola en cada vuelta del menú (solo para Unix/Linux).
-
-### 🧾 Ejemplo de Entrada/Salida
-
-```
-Bienvenido a la tienda virtual 🛍️
-¿Qué deseas hacer?
-
-1. Ver catálogo
-2. Agregar producto al carrito
-3. Eliminar producto del carrito
-4. Vaciar carrito
-5. Mostrar carrito
-6. Finalizar compra
-7. Salir
-> 1
-
-Código: A001 | Producto: Pan | Precio: S/1.50
-Código: B203 | Producto: Leche | Precio: S/3.80
-...
-
-> 2
-Ingrese código de producto: B203
-Cantidad: 2
-✔ Producto agregado al carrito.
-
-> 5
-Tu carrito:
-- Leche (x2) -> S/7.60
-Total: S/7.60
-
-> 6
-Resumen de compra:
-Leche (x2) -> S/7.60
-Total a pagar: S/7.60
-Gracias por tu compra 🧾
-
-> 7
-Hasta pronto 👋
-```
+This is an educational project created as part of a final assignment.
