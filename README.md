@@ -3,7 +3,7 @@
 This project simulates the logic of a basic e-commerce project, but with enough complexity to help you think about modularization, input validation, error handling, and clean, pure-function design. There's no graphical interface or API consumption: you work with the console and data structures.
 
 <div style="text-align: center">
-<img src="./demo.gif" alt="Demo of the Shopping Cart Simulator" width="600" style="margin-bottom: 20px;">
+<img src="./assets/demo.gif" alt="Demo of the Shopping Cart Simulator" width="600" style="margin-bottom: 20px;">
 </div>
 
 ## 🚀 How to Run the Project
